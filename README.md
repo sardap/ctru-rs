@@ -28,7 +28,7 @@ This project is based on the efforts of the original authors:
 * [Eidolon](https://github.com/HybridEidolon)
 * [FenrirWolf](https://github.com/FenrirWolf)
 
-The old version is archived [here](https://github.com/rust3ds/ctru-rs-old).
+The old version is archived [here](https://github.com/sardap/ctru-rs-old).
 
 ## License
 

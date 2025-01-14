@@ -3,7 +3,7 @@ name = "ctru-rs"
 version = "0.7.1"
 authors = ["Rust3DS Org", "Ronald Kinard <furyhunter600@gmail.com>"]
 description = "A safe wrapper around libctru"
-repository = "https://github.com/rust3ds/ctru-rs"
+repository = "https://github.com/sardap/ctru-rs"
 documentation = "https://rust3ds.github.io/ctru-rs/crates/ctru"
 keywords = ["3ds", "libctru"]
 categories = ["os", "api-bindings", "hardware-support"]
@@ -35,7 +35,7 @@ cfg-if = "1.0.0"
 ferris-says = "0.2.1"
 futures = "0.3"
 lewton = "0.10.2"
-test-runner = { git = "https://github.com/rust3ds/ctru-rs.git" }
+test-runner = { git = "https://github.com/sardap/ctru-rs.git" }
 time = "0.3.7"
 tokio = { version = "1.16", features = ["rt", "time", "sync", "macros"] }
 

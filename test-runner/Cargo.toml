@@ -9,6 +9,6 @@ gdb = []
 socket = []
 
 [dependencies]
-ctru-rs = { git = "https://github.com/rust3ds/ctru-rs" }
-ctru-sys = { git = "https://github.com/rust3ds/ctru-rs" }
+ctru-rs = { git = "https://github.com/sardap/ctru-rs" }
+ctru-sys = { git = "https://github.com/sardap/ctru-rs" }
 libc = { workspace = true }

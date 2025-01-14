@@ -9,7 +9,7 @@ can be found [here](https://rust3ds.github.io/ctru-rs/crates/ctru_sys).
 ## Requirements
 
 To use the bindings provided by this crate you will need to link against the [`libctru`](https://github.com/devkitPro/libctru) library.
-Consult the [`ctru-rs` wiki](https://github.com/rust3ds/ctru-rs/wiki/Getting-Started) to learn how to obtain the required packages
+Consult the [`ctru-rs` wiki](https://github.com/sardap/ctru-rs/wiki/Getting-Started) to learn how to obtain the required packages
 to use this library.
 
 ## Version

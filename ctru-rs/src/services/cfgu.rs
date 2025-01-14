@@ -32,29 +32,29 @@ pub enum Region {
 #[repr(i8)]
 pub enum Language {
     /// Japanese.
-    Japanese = ctru_sys::CFG_LANGUAGE_JP,
+    Japanese = ctru_sys::CFG_LANGUAGE_JP as i8,
     /// English.
-    English = ctru_sys::CFG_LANGUAGE_EN,
+    English = ctru_sys::CFG_LANGUAGE_EN as i8,
     /// French.
-    French = ctru_sys::CFG_LANGUAGE_FR,
+    French = ctru_sys::CFG_LANGUAGE_FR as i8,
     /// German.
-    German = ctru_sys::CFG_LANGUAGE_DE,
+    German = ctru_sys::CFG_LANGUAGE_DE as i8,
     /// Italian.
-    Italian = ctru_sys::CFG_LANGUAGE_IT,
+    Italian = ctru_sys::CFG_LANGUAGE_IT as i8,
     /// Spanish.
-    Spanish = ctru_sys::CFG_LANGUAGE_ES,
+    Spanish = ctru_sys::CFG_LANGUAGE_ES as i8,
     /// Korean.
-    Korean = ctru_sys::CFG_LANGUAGE_KO,
+    Korean = ctru_sys::CFG_LANGUAGE_KO as i8,
     /// Dutch.
-    Dutch = ctru_sys::CFG_LANGUAGE_NL,
+    Dutch = ctru_sys::CFG_LANGUAGE_NL as i8,
     /// Portuguese.
-    Portuguese = ctru_sys::CFG_LANGUAGE_PT,
+    Portuguese = ctru_sys::CFG_LANGUAGE_PT as i8,
     /// Russian.
-    Russian = ctru_sys::CFG_LANGUAGE_RU,
+    Russian = ctru_sys::CFG_LANGUAGE_RU as i8,
     /// Simplified Chinese.
-    SimplifiedChinese = ctru_sys::CFG_LANGUAGE_ZH,
+    SimplifiedChinese = ctru_sys::CFG_LANGUAGE_ZH as i8,
     /// Traditional Chinese.
-    TraditionalChinese = ctru_sys::CFG_LANGUAGE_TW,
+    TraditionalChinese = ctru_sys::CFG_LANGUAGE_TW as i8,
 }
 
 /// Specific model of the console.
@@ -268,6 +268,7 @@ impl TryFrom<i8> for Language {
     type Error = ();
 
     fn try_from(value: i8) -> Result<Self, Self::Error> {
+        let value = value as u8;
         match value {
             ctru_sys::CFG_LANGUAGE_JP => Ok(Language::Japanese),
             ctru_sys::CFG_LANGUAGE_EN => Ok(Language::English),

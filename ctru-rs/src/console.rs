@@ -59,7 +59,7 @@ impl<S: Screen + Swap + Flush> ConsoleScreen for S {}
 ///
 /// If you'd like to see live standard output while running the application but cannot or do not want to show the text on the 3DS itself,
 /// you can try using [`Soc::redirect_to_3dslink`](crate::services::soc::Soc::redirect_to_3dslink) while activating the `--server` flag for `3dslink` (also supported by `cargo-3ds`).
-/// More info in the [`cargo-3ds` docs](https://github.com/rust3ds/cargo-3ds#running-executables).
+/// More info in the [`cargo-3ds` docs](https://github.com/sardap/cargo-3ds#running-executables).
 #[doc(alias = "PrintConsole")]
 pub struct Console<'screen> {
     context: Box<UnsafeCell<PrintConsole>>,

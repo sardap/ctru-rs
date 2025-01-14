@@ -32,7 +32,7 @@ fn main() {
     println!("cargo:rerun-if-env-changed=DEVKITPRO");
     println!("cargo:rustc-link-search=native={devkitpro}/libctru/lib");
 
-    // https://github.com/rust3ds/cargo-3ds/issues/14#issuecomment-1783991872
+    // https://github.com/sardap/cargo-3ds/issues/14#issuecomment-1783991872
     // To link properly, this must be the same as the library linked by cargo-3ds when building
     // the standard library, so if `-lctru[d]` is found in RUSTFLAGS we always defer to that
     // https://doc.rust-lang.org/cargo/reference/environment-variables.html#environment-variables-cargo-sets-for-build-scripts

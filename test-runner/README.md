@@ -10,7 +10,7 @@ hardware or in an emulator to get a similar experience as a usual `cargo test`.
 First the test runner to your crate:
 
 ```sh
-cargo add --dev test-runner --git https://github.com/rust3ds/ctru-rs
+cargo add --dev test-runner --git https://github.com/sardap/ctru-rs
 ```
 
 In `lib.rs` and any integration test files:
